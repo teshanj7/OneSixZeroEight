@@ -1,10 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// For GitHub Pages, set BASE to '/<repo-name>/' before building/deploying
-const BASE = process.env.VITE_BASE || '/'
-
 export default defineConfig({
+  base: '/OneSixZeroEight/', // <-- change to your repo name EXACTLY (case-sensitive)
   plugins: [react()],
-  base: BASE
 })
